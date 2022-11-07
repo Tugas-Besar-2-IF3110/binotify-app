@@ -1,0 +1,94 @@
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
+body {
+    background-color: #000;
+}
+
+*{
+    font-family: 'Gotham', sans-serif;
+    box-sizing: border-box;
+}
+
+.nav-text{
+    font-weight: normal;
+    margin-bottom: -10px;
+    margin-top: -10px;
+}
+
+#navbar-upper-line{
+    margin-top: -20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar {
+    width: 200px;
+    background-color: #000;
+    font-weight: bold;
+}
+
+.navbar .profile {
+    margin-top: 15px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.navbar .profile img {
+    width: 150px;
+    height: 150px;
+}
+  
+.navbar a {
+    color: #bbb;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+  
+.navbar a:hover {
+    color: #ffffff;
+}
+
+.navbar-image {
+    border-radius: 50%;
+}
+
+.btn {
+    border: none;
+    color: #000;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-login {
+    background-color: #1DB954; /* Green */
+}
+
+.btn-login:hover {
+    background-color: #21dc63;
+}
+
+.btn-logout {
+    background-color: red;
+}
+
+.btn-logout:hover {
+    background-color: rgb(252, 118, 118);
+}
+
+.btn-navbar:hover {
+    background-color: #FFF;
+}

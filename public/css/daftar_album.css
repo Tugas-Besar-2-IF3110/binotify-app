@@ -1,0 +1,119 @@
+.albums {
+    background-color: rgb(17,17,17);
+    width:100%;
+    height:100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+}
+
+img {
+    height: 400px;
+}
+    
+#container{
+    box-shadow: 0 15px 30px 1px grey;
+    background: rgba(255, 255, 255, 0.90);
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 5em auto;
+    height: 200px;
+    width: 400px;
+}
+
+#daftar-album-title{
+    color:white;
+    margin-top: 0px;
+    margin-bottom: 1%;
+    margin-left: 20px;
+    font-size: 65px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.column{
+    border-radius: 5px;
+    width: 200px;
+    height: max-content;
+    background: rgb(20,20,20);
+    margin: 0.25% 0.25% 5% 0.25%;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.column:hover{
+    background: rgb(40,40,40);
+    cursor:pointer;
+}
+
+.album_photo{
+    border-radius: 5px;
+    width: 175px;
+    height: 175px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    object-fit: contain;
+}
+
+.album_title{
+    text-align: left;
+    margin-top: 0px;    
+    margin-bottom: 0px;
+    margin-left: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.album_singer{
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    font-size: medium;
+    color:grey;
+
+}
+
+.year_genre{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    margin-right: auto;
+    margin-top: 5px;
+    font-size: smaller;
+    color:grey;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #a0a0a0;
+    border-radius: 5px;
+    visibility: hidden;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #606060;
+    border-radius: 5px;
+
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #808080;
+  }

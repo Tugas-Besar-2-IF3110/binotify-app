@@ -1,0 +1,29 @@
+version: '3.3'
+services:
+  web:
+    build:
+      context: .
+    volumes:
+      - .user.ini:/usr/local/etc/php/conf.d/.user.ini
+      - ./:/var/www/html
+    container_name: BINOTIFY_WEBSITE
+    image: tubes-1:latest
+    ports:
+      - 8008:80
+    tty: true
+    env_file: 
+      - /app/.env
+    depends_on:
+      - db
+  db:
+    build:
+      context: ./docker_db
+    environment:
+      MYSQL_ROOT_PASSWORD: habede
+      MYSQL_DATABASE: habede
+      MYSQL_USER: habede
+      MYSQL_PASSWORD: habede
+    container_name: BINOTIFY_DB
+    ports:
+      - "3307:3306"
+    tty: true

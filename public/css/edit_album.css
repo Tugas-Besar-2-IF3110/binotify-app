@@ -1,0 +1,97 @@
+.wrapper-edit-album {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(17, 17, 17);
+    overflow: auto;
+    /* margin: 0px; */
+    margin-left: 20px;
+}
+
+.album-edit-block-upper {
+    width: 100%;
+    flex: 0 0 50px;
+    /* margin-top: 5px; */
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: row;
+}
+
+.album-edit-block-middle {
+    width: 100%;
+    flex: 1 0 50px;
+    /* margin-top: 5px; */
+    background-color: rgb(25, 25, 25);
+    padding: 0px;
+    position: relative;
+    height: auto;
+}
+
+.album-edit-text {
+    margin: 20px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.edit-album-button {
+    width: 60px;
+    height: 30px;
+    border-radius: 10%;
+    background-color: #1DB954;
+    border: none;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+.edit-album-form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.label-edit-album {
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+}
+
+.album-edit-image {
+    background-color: white;
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.buttonOrMessageHolder{ text-align: center; }
+
+.edit-album-button:hover{
+    cursor: pointer;
+    background-color: #21dc63;
+}
+
+.album-edit-title {
+    font-size: 65px;
+    margin: 0px;
+}
+
+#album_edit_image_input {
+    color: white;
+}
+
+#album_edit_audio_element {
+    margin: 20px;
+}
+
+.album-edit-message {
+    
+    margin-left: auto;
+    margin-right: auto;
+}

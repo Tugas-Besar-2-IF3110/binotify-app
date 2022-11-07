@@ -1,0 +1,96 @@
+.wrapper-add-album {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(17, 17, 17);
+    overflow: auto;
+    margin-left: 20px;
+}
+
+.album-add-block-upper {
+    width: 100%;
+    flex: 0 0 50px;
+    /* margin-top: 5px; */
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: row;
+}
+
+.album-add-block-middle {
+    width: 100%;
+    flex: 1 0 50px;
+    /* margin-top: 5px; */
+    background-color: rgb(25, 25, 25);
+    padding: 0px;
+    position: relative;
+    height: auto;
+}
+
+.album-add-text {
+    margin: 20px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.add-album-button {
+    width: 60px;
+    height: 30px;
+    border-radius: 10%;
+    background-color: #1DB954;
+    border: none;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+.add-album-form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.label-add-album {
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+}
+
+.album-add-image {
+    background-color: white;
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.buttonOrMessageHolder{ text-align: center; }
+
+.add-album-button:hover{
+    cursor: pointer;
+    background-color: #21dc63;
+}
+
+.album-add-title {
+    font-size: 65px;
+    margin: 0px;
+}
+
+#album_add_image_input {
+    color: white;
+}
+
+#album_add_audio_element {
+    margin: 20px;
+}
+
+.album-add-message {
+    
+    margin-left: auto;
+    margin-right: auto;
+}
