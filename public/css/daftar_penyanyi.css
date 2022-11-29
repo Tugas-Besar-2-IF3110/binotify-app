@@ -53,16 +53,6 @@
     background-color: rgb(17, 17, 17);
 }
 
-.daftar-penyanyi-image {
-    background-color: rgb(25,25,25);
-    margin: 20px;
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
-    min-width: 200px;
-    min-height: 200px;
-}
-
 .daftar-penyanyi-text {
     color: white;
     font-weight: bold;
@@ -78,32 +68,6 @@
 }
 
 .daftar-penyanyi-button-subs{
-
-}
-
-
-.daftar-penyanyi-button {
-    width: 50px;
-    height: 40px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 20px;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    border-radius: 10%;
-    background-color: #1DB954;
-    border: none;
-    font-weight: bold;
-}
-
-.daftar-penyanyi-button:hover{
-    cursor: pointer;
-    background-color: #21dc63;
-}
-
-.daftar-penyanyi-songs-button {
     width: 100px;
     height: 30px;
     border-radius: 10%;
@@ -112,17 +76,42 @@
     font-weight: bold;
 }
 
-.daftar-penyanyi-songs-button:hover{
+.daftar-penyanyi-button-subs:hover{
     cursor: pointer;
     background-color: #21dc63;
 }
 
-/* .daftar-penyanyi-buttons {  
-    align-items: center;
-    align-self: center;
-    display: flex;
-    flex-direction: row;
-} */
+.daftar-penyanyi-button-list{
+    width: 100px;
+    height: 30px;
+    border-radius: 10%;
+    background-color: #1DB954;
+    border: none;
+    font-weight: bold;
+}
+
+.daftar-penyanyi-button-list:hover{
+    cursor: pointer;
+    background-color: #21dc63;
+}
+
+.daftar-penyanyi-button-wait{
+    width: 100px;
+    height: 30px;
+    border-radius: 10%;
+    background-color: yellow;
+    border: none;
+    font-weight: bold;
+}
+
+.daftar-penyanyi-button-rej{
+    width: 100px;
+    height: 30px;
+    border-radius: 10%;
+    background-color: red;
+    border: none;
+    font-weight: bold;
+}
 
 .daftar-penyanyi-songs-table {
     /* background-color: rgb(38, 38, 38); */
@@ -136,25 +125,4 @@
 
 .daftar-penyanyi-table-align-right {
     text-align: right;
-}
-
-.daftar-penyanyi-button-delete {
-    width: 65px;
-    height: 40px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 100px;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    border-radius: 10%;
-    background-color: red;
-    border: none;
-    font-weight: bold;
-}
-
-.daftar-penyanyi-button-delete:hover {
-    cursor: pointer;
-    background-color: rgb(253, 31, 31);
 }
