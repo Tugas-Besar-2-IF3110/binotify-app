@@ -2,18 +2,30 @@
 
 class Subscription extends Controller {
     public function index() {
-        $soapClient = new SoapClient(BASE_SOAP_URL . "?wsdl");
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            // The request is using the POST method
+            session_start();
 
-        $req = new RequestSubscriptionReq(API_KEY, 1, 1);
-        $params = array(
-            "request" => $req
-        );
+            if (isset($_POST['creator_id']) && isset($_POST['subscriber_id'])) {
+                $creator_id = $_POST['creator_id'];
+                $subscriber_id = $_POST['subscriber_id'];
+                $soapClient = new SoapClient(BASE_SOAP_URL . "?wsdl");
 
-        $responseObj = $soapClient->__soapCall("requestSubscription", array($params));
+                $req = new RequestSubscriptionReq(API_KEY, $creator_id, $subscriber_id);
+                $params = array(
+                    "request" => $req
+                );
+                $responseObj = $soapClient->__soapCall("requestSubscription", array($params));
+                $response = new RequestSubscriptionResp($responseObj->return);
 
-        $response = new RequestSubscriptionResp($responseObj->return);
-        var_dump($response);
-
+                if ($response->success) {
+                    $success_insert = $this->model('subscriptionmodel')->insert($creator_id, $subscriber_id);
+                    if ($success_insert) {
+                        header("Location: ". BASE_PUBLIC_URL . "/premium/singer_list");
+                    }
+                }
+            }
+        }
     }
 }
 ?>
