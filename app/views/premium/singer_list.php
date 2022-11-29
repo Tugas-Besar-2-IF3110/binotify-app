@@ -19,9 +19,19 @@
                     <td class="bg-17-17-17"><?php echo $i; ?></td>
                     <td class="bg-17-17-17"><?php echo $penyanyi["name"]; ?></td>
                     <td class="daftar-penyanyi-table-align-right bg-17-17-17 daftar-penyanyi-songs-buttons">
-                        <a href="<?php echo BASE_PUBLIC_URL . "/song/detail/" . "asdf"; ?>">
-                            <button class="daftar-penyanyi-songs-button">Subscribe</button>
-                        </a>
+                        <?php if ($penyanyi["status"] == "SUBSCRIBE") { ?>
+                            <a href="<?php echo BASE_PUBLIC_URL . "/song/detail/" . "asdf"; ?>">
+                                <button class="daftar-penyanyi-songs-button">Subscribe</button>
+                            </a>
+                        <?php } else if ($penyanyi["status"] == "PENDING") { ?>
+                            <button class="daftar-penyanyi-songs-button">Waiting</button>
+                        <?php } else if ($penyanyi["status"] == "ACCEPTED") { ?>
+                            <a href="<?php echo BASE_PUBLIC_URL . "/song/detail/" . "asdf"; ?>">
+                                <button class="daftar-penyanyi-songs-button">Daftar Lagu</button>
+                            </a>
+                        <?php } else if ($penyanyi["status"] == "REJECTED") { ?>
+                            <button class="daftar-penyanyi-songs-button">Rejected</button>
+                        <?php } ?>
                     </td>
                 </tr>
                 <?php $i++; ?>
