@@ -32,4 +32,12 @@ CREATE TABLE song (
     FOREIGN KEY (album_id) REFERENCES album (album_id) ON DELETE CASCADE
 );
 
+CREATE TABLE subscription (
+    creator_id INT NOT NULL,
+    subscriber_id INT NOT NULL,
+    status ENUM('PENDING', 'ACCEPTED', 'REJECTED') NOT NULL DEFAULT 'PENDING',
+    FOREIGN KEY (subscriber_id) REFERENCES user(user_id) ON DELETE CASCADE,
+    PRIMARY KEY (creator_id, subscriber_id)
+);
+
 INSERT INTO user VALUES (1, 'admin@gmail.com', '$2y$10$DVwuawj2W0iigY8zl/4JI.TT.Bb2GcV6D2B2ipz79va49Xmv.O1qm', 'admin', 'Admin', true);
