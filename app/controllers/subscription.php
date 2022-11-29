@@ -31,7 +31,7 @@ class Subscription extends Controller {
     public function callback_update_request() {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $headers = getallheaders();
-            if (isset($headers["Authorization"]) && $headers["Authorization"] == BINOTIF_SOAP_API_KEY) {
+            if (isset($headers["Authorization"]) && $headers["Authorization"] == BINOTIFY_SOAP_API_KEY) {
                 $creator_id = $_POST["creator_id"];
                 $subscriber_id = $_POST["subscriber_id"];
                 $status = $_POST["status"];

@@ -26,7 +26,7 @@ class subscriptionmodel {
         "SET status = '". $status ."' " .
         "WHERE " .
         "creator_id = " . $creator_id .
-        "AND subscriber_id = " . $subscriber_id
+        " AND subscriber_id = " . $subscriber_id
         ;
         $this->db->query($query);
         $this->db->execute();

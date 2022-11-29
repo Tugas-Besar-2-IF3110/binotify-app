@@ -13,7 +13,7 @@
             <th class="daftar-penyanyi-table-align-right bg-17-17-17"></th>
         </tr>
 
-        <?php $i = 1; var_dump($data["penyanyi"]) ?>
+        <?php $i = 1; ?>
         <?php foreach ($data["penyanyi"] as $penyanyi): ?>
             <tr>
                 <td class="bg-17-17-17"><?php echo $i; ?></td>
@@ -28,7 +28,7 @@
                     <?php } else if ($penyanyi["status"] == "PENDING") { ?>
                         <button class="daftar-penyanyi-button-wait">Waiting</button>
                     <?php } else if ($penyanyi["status"] == "ACCEPTED") { ?>
-                        <a href="<?php echo BASE_PUBLIC_URL . "/song/detail/" . "asdf"; ?>">
+                        <a href="<?php echo BASE_PUBLIC_URL . "/premium/song_list/" . $penyanyi["user_id"]; ?>">
                             <button class="daftar-penyanyi-button-list">Daftar Lagu</button>
                         </a>
                     <?php } else if ($penyanyi["status"] == "REJECTED") { ?>
