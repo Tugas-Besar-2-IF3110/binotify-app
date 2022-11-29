@@ -27,5 +27,32 @@ class Subscription extends Controller {
             }
         }
     }
+
+    public function callback_update_request() {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $headers = getallheaders();
+            if (isset($headers["Authorization"]) && $headers["Authorization"] == BINOTIF_SOAP_API_KEY) {
+                $creator_id = $_POST["creator_id"];
+                $subscriber_id = $_POST["subscriber_id"];
+                $status = $_POST["status"];
+    
+                $success_update = $this->model('subscriptionmodel')->update_status($creator_id, $subscriber_id, $status);
+                $data["success"] = $success_update;
+                if ($success_update) {
+                    $data["message"] = "Update successful";
+                    http_response_code(200);
+                } else {
+                    $data["message"] = "Update failed";
+                    http_response_code(400);
+                }
+                echo json_encode($data);
+            } else {
+                $data["success"] = false;
+                $data["message"] = "Not Authorized";
+                http_response_code(400);
+                echo json_encode($data);
+            }
+        }
+    }
 }
 ?>

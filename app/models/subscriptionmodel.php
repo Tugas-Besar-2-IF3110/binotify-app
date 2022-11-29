@@ -20,6 +20,19 @@ class subscriptionmodel {
         $this->db->query('SELECT * FROM subscription WHERE subscriber_id = ' . $id);
         return $this->db->multiple();
     }
+
+    function update_status($creator_id, $subscriber_id, $status) {
+        $query = "UPDATE subscription " .
+        "SET status = '". $status ."' " .
+        "WHERE " .
+        "creator_id = " . $creator_id .
+        "AND subscriber_id = " . $subscriber_id
+        ;
+        $this->db->query($query);
+        $this->db->execute();
+
+        return $this->db->rowCount() == 1;
+    }
 }
 
 ?>
