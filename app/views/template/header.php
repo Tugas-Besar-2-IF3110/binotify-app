@@ -25,6 +25,7 @@
         <link href="<?= BASE_PUBLIC_URL; ?>/css/edit_song.css" type="text/css" rel="stylesheet" />
         <link href="<?= BASE_PUBLIC_URL; ?>/css/add_album.css" type="text/css" rel="stylesheet" />
         <link href="<?= BASE_PUBLIC_URL; ?>/css/add_song.css" type="text/css" rel="stylesheet" />
+        <link href="<?= BASE_PUBLIC_URL; ?>/css/daftar_penyanyi.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
         <div class="container">
