@@ -77,6 +77,11 @@
     margin: 0px;
 }
 
+.daftar-penyanyi-button-subs{
+
+}
+
+
 .daftar-penyanyi-button {
     width: 50px;
     height: 40px;
@@ -112,9 +117,6 @@
     background-color: #21dc63;
 }
 
-.daftar-penyanyi-songs-buttons {
-    position: relative;
-}
 /* .daftar-penyanyi-buttons {  
     align-items: center;
     align-self: center;

@@ -21,16 +21,16 @@
                     <td class="daftar-penyanyi-table-align-right bg-17-17-17 daftar-penyanyi-songs-buttons">
                         <?php if ($penyanyi["status"] == "SUBSCRIBE") { ?>
                             <a href="<?php echo BASE_PUBLIC_URL . "/song/detail/" . "asdf"; ?>">
-                                <button class="daftar-penyanyi-songs-button">Subscribe</button>
+                                <button class="daftar-penyanyi-button-subs">Subscribe</button>
                             </a>
                         <?php } else if ($penyanyi["status"] == "PENDING") { ?>
-                            <button class="daftar-penyanyi-songs-button">Waiting</button>
+                            <button class="daftar-penyanyi-button-wait">Waiting</button>
                         <?php } else if ($penyanyi["status"] == "ACCEPTED") { ?>
                             <a href="<?php echo BASE_PUBLIC_URL . "/song/detail/" . "asdf"; ?>">
-                                <button class="daftar-penyanyi-songs-button">Daftar Lagu</button>
+                                <button class="daftar-penyanyi-button-list">Daftar Lagu</button>
                             </a>
                         <?php } else if ($penyanyi["status"] == "REJECTED") { ?>
-                            <button class="daftar-penyanyi-songs-button">Rejected</button>
+                            <button class="daftar-penyanyi-button-rej">Rejected</button>
                         <?php } ?>
                     </td>
                 </tr>
