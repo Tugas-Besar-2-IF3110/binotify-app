@@ -13,6 +13,9 @@
         <a class="nav-text" href="<?= BASE_PUBLIC_URL; ?>/album/add_album">Tambah Album</a>
     <?php } ?>
     <a class="nav-text" href="<?= BASE_PUBLIC_URL; ?>/album/get_album">Daftar Album</a>
+    <?php if (isset($_SESSION['isAdmin']) && $_SESSION['isAdmin'] == 0) { ?>
+        <a class="nav-text" href="<?= BASE_PUBLIC_URL; ?>/premium/singer_list">Daftar Penyanyi Premium</a>
+    <?php } ?>
     <?php if (isset($_SESSION['isAdmin']) && $_SESSION['isAdmin'] == 1) { ?>
         <a class="nav-text" href="<?= BASE_PUBLIC_URL; ?>/user/get_user">Daftar User</a>
     <?php } ?>

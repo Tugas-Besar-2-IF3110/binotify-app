@@ -1,0 +1,157 @@
+.header-daftar-penyanyi {
+    width: 100%;
+}
+
+.daftar-penyanyi-title{
+    margin-top: 0px;
+    margin-bottom: 1%;
+    margin-left: 20px;
+    color: white;
+    font-size: 65px;
+}
+
+.daftar-penyanyi-text{
+    margin-left: 20px;
+}
+
+.wrapper-daftar-penyanyi {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(17, 17, 17);
+  overflow: auto;
+  /* margin: 0px; */
+  margin-left: 20px;
+}
+
+.daftar-penyanyi-block-upper {
+    width: 100%;
+    flex: 0 0 50px;
+    /* margin-top: 5px; */
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: row;
+}
+
+.daftar-penyanyi-block-middle {
+    width: 100%;
+    flex: 1 0 50px;
+    /* margin-top: 5px; */
+    background-color: rgb(25, 25, 25);
+    padding: 0px;
+    position: relative;
+    min-height: 75px;
+    max-height: 75px;
+}
+
+.daftar-penyanyi-block-bottomer {
+    width: 100%;
+    flex: 0 0 50px;
+    /* margin-top: 5px; */
+    background-color: rgb(17, 17, 17);
+}
+
+.daftar-penyanyi-image {
+    background-color: rgb(25,25,25);
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    min-width: 200px;
+    min-height: 200px;
+}
+
+.daftar-penyanyi-text {
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: auto;
+}
+
+.daftar-penyanyi-title {
+    font-size: 65px;
+    margin: 0px;
+}
+
+.daftar-penyanyi-button {
+    width: 65px;
+    height: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border-radius: 10%;
+    background-color: #1DB954;
+    border: none;
+    font-weight: bold;
+}
+
+.daftar-penyanyi-button:hover{
+    cursor: pointer;
+    background-color: #21dc63;
+}
+
+.daftar-penyanyi-songs-button {
+    width: 60px;
+    height: 30px;
+    border-radius: 10%;
+    background-color: #1DB954;
+    border: none;
+    font-weight: bold;
+}
+
+.daftar-penyanyi-songs-button:hover{
+    cursor: pointer;
+    background-color: #21dc63;
+}
+
+.daftar-penyanyi-songs-buttons {
+    position: relative;
+}
+/* .daftar-penyanyi-buttons {  
+    align-items: center;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+} */
+
+.daftar-penyanyi-songs-table {
+    background-color: rgb(38, 38, 38);
+    width: 100%;
+}
+
+.bg-17-17-17 {
+    background-color: rgb(17, 17, 17);
+}
+
+.daftar-penyanyi-table-align-right {
+    text-align: right;
+}
+
+.daftar-penyanyi-button-delete {
+    width: 65px;
+    height: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 100px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border-radius: 10%;
+    background-color: red;
+    border: none;
+    font-weight: bold;
+}
+
+.daftar-penyanyi-button-delete:hover {
+    cursor: pointer;
+    background-color: rgb(253, 31, 31);
+}
