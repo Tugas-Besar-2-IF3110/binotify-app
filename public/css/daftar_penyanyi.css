@@ -78,7 +78,7 @@
 }
 
 .daftar-penyanyi-button {
-    width: 65px;
+    width: 50px;
     height: 40px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -99,7 +99,7 @@
 }
 
 .daftar-penyanyi-songs-button {
-    width: 60px;
+    width: 100px;
     height: 30px;
     border-radius: 10%;
     background-color: #1DB954;
@@ -123,7 +123,8 @@
 } */
 
 .daftar-penyanyi-songs-table {
-    background-color: rgb(38, 38, 38);
+    /* background-color: rgb(38, 38, 38); */
+    background-color: white;
     width: 100%;
 }
 
