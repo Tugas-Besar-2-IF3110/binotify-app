@@ -18,7 +18,7 @@
                 <tr>
                     <td class="bg-17-17-17"><?php echo $i; ?></td>
                     <td class="bg-17-17-17"><?php echo $song["Judul"]; ?></td>
-                    <td className="daftar-plagu-table-align-right bg-17-17-17">
+                    <td class="bg-17-17-17">
                         <audio controls src="<?php echo BINOTIFY_PREMIUM_API . "/song/" . $song["Audio_path"] ?>"></audio>
                     </td>
                 </tr>
