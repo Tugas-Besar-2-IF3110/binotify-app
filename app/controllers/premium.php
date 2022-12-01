@@ -1,9 +1,31 @@
 <?php 
 
 class Premium extends Controller {
+    public function __construct() 
+    {
+        $this->soapClient = new SoapClient(BASE_SOAP_URL . "?wsdl");
+    }
+
     public function singer_list() {
         session_start();
+        
         if (isset($_SESSION['user_id']) && $_SESSION['isAdmin'] == 0) {
+            $subscriber_id = $_SESSION['user_id'];
+
+            $req = new CheckStatusRequestReq(API_KEY, 4, 5);
+            $params = array(
+                "request" => $req
+            );
+            
+            $responseObj = $this->soapClient->__soapCall("checkStatusRequest", array($params));
+            $resp = new CheckStatusRequestResp($responseObj->return);
+
+            if($resp->status && $resp->list != null) {
+                foreach($resp->list as $element) {
+                    $success_update = $this->model('subscriptionmodel')->update_status($element["creator_id"], $element["subscriber_id"], $element["status"]);
+                }
+            }
+
             $curl = curl_init();
             curl_setopt_array($curl, [
                 CURLOPT_URL => BINOTIFY_PREMIUM_API . "/user",
