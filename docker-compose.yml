@@ -4,10 +4,12 @@ services:
     build:
       context: .
     volumes:
-      - .user.ini:/usr/local/etc/php/conf.d/.user.ini
+      - ./app/.user.ini:/usr/local/etc/php/conf.d/.user.ini
       - ./:/var/www/html
+      - ./app/php.ini:/usr/local/etc/php/php.ini-production
     container_name: BINOTIFY_WEBSITE
     image: tubes-1:latest
+    network_mode: "bridge"
     ports:
       - 8008:80
     tty: true
@@ -15,6 +17,7 @@ services:
       - /app/.env
     depends_on:
       - db
+
   db:
     build:
       context: ./docker_db
