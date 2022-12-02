@@ -78,10 +78,10 @@ Untuk menghentikan dan menghapus container
 <img src="screenshots/daftaruser.png" /><br>
 
 ### Daftar Penyanyi Premium
-<img src="screenshots/daftarpenyanyi.png" /><br>
+<img src="screenshots/daftarpenyanyi.jpg" /><br>
 
 ### Daftar Lagu Premium
-<img src="screenshots/daftarpremium.png" /><br>
+<img src="screenshots/daftarlagupremium.jpg" /><br>
 
 ## Pembagian Tugas
 *Client-Side*
@@ -93,7 +93,7 @@ Untuk menghentikan dan menghapus container
 * Detail Lagu: `13520154`<br>
 * Detail Album: `13520154`<br>
 * Tambah Album/Lagu: `13520154`, `13520160`<br>
-* Daftar User: `13520160`<br><br>
+* Daftar User: `13520160`<br>
 * Daftar Penyanyi Premium: `13520133`, `13520160`<br>
 * Daftar Lagu Premium: `13520133`, `13520160`<br>
 
@@ -106,6 +106,6 @@ Untuk menghentikan dan menghapus container
 * Detail Lagu: `13520154`<br>
 * Detail Album: `13520154`<br>
 * Tambah Album/Lagu: `13520154`, `13520160`<br>
-* Daftar User: `13520160`<br><br>
+* Daftar User: `13520160`<br>
 * Daftar Penyanyi Premium: `13520133`, `13520154`<br>
 * Daftar Lagu Premium: `13520133`, `13520154`<br>
