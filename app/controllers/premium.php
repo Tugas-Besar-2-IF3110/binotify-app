@@ -20,7 +20,7 @@ class Premium extends Controller {
             $responseObj = $this->soapClient->__soapCall("checkStatusRequest", array($params));
             $resp = new CheckStatusRequestResp($responseObj->return);
 
-            if($resp->status && $resp->list != null) {
+            if($resp->success && $resp->list != null) {
                 foreach($resp->list as $element) {
                     $success_update = $this->model('subscriptionmodel')->update_status($element["creator_id"], $element["subscriber_id"], $element["status"]);
                 }
