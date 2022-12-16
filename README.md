@@ -1,4 +1,4 @@
-# Tugas Besar 1 IF3110 - HaBeDe
+# Tugas Besar 2 IF3110 - HaBeDe - Binotify App
 ## Deskripsi Aplikasi Web
 
 Aplikasi web yang dibuat merupakan sebuah aplikasi yang menyerupai sebuah *streaming service* berbasis web. Aplikasi akan memuat album serta lagu yang dapat didengar oleh penggunanya. Pengguna dibagi menjadi 2, *user* dan *admin*. *User* dapat melakukan hal-hal seperti melihat daftar dan detail album, melihat detail lagu, mencari lagu, mendengarkan lagu, melakukan *subscribe* kepada penyanyi yang telah mendaftar ke Binotify Premium App, dan mendengarkan lagu dari penyanyi yang telah di-*subscribe*. *Admin* dapat melakukan hal-hal yang dilakukan oleh *user* dengan tambahan seperti menghapus dan menambahkan album, menghapus dan menambahkan lagu, mendengarkan lagu, melihat daftar *user* yang ada.
