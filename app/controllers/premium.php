@@ -12,7 +12,7 @@ class Premium extends Controller {
         if (isset($_SESSION['user_id']) && $_SESSION['isAdmin'] == 0) {
             $subscriber_id = $_SESSION['user_id'];
 
-            $req = new CheckStatusRequestReq(API_KEY, 4, 5);
+            $req = new CheckStatusRequestReq(API_KEY, null, $subscriber_id);
             $params = array(
                 "request" => $req
             );
@@ -22,7 +22,7 @@ class Premium extends Controller {
 
             if($resp->success && $resp->list != null) {
                 foreach($resp->list as $element) {
-                    $success_update = $this->model('subscriptionmodel')->update_status($element["creator_id"], $element["subscriber_id"], $element["status"]);
+                    $success_update = $this->model('subscriptionmodel')->update_status($element->creatorId, $element->subscriberId, $element->status);
                 }
             }
 
